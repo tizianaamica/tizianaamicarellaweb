@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://tizianaamica.com/</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://tizianaamica.com/tiziana-amicarella.jpg</image:loc>
+      <image:title>Tiziana Amicarella - Senior Developer Engineer, Software Developer, Backend Developer, Full Stack Developer, Cloud Computing, AWS, Azure, Node.js, React, Java, Spring Boot, PostgreSQL, Microservices</image:title>
+      <image:caption>Tiziana Amicarella profile photo</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://tizianaamica.com/privacy.html</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>
