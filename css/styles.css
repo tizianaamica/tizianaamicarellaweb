@@ -1,22 +1,26 @@
 :root {
-  /* Sidebar in dark plum/lilac */
-  --bg-sidebar: #4a354f;
-  --text-sidebar-primary: #f8f5f9;
-  --text-sidebar-secondary: #dccde1;
+  /* Sidebar en petróleo oscuro */
+  --bg-sidebar: #12373d;
+  --text-sidebar-primary: #f3fafb;
+  --text-sidebar-secondary: #cfe6e9;
 
-  /* Main content and soft background */
-  --bg-main: #f7f5f8;
-  --bg-main-alt: #f0edf3;
-  --bg-card: #fffdfd;
+  /* Contenido principal y fondos suaves (tintados de teal) */
+  --bg-main: #f4f9fa;
+  --bg-main-alt: #e8f2f4;
+  --bg-card: #fdffff;
 
-  --text-primary: #3a3a3a;
-  --text-secondary: #5d5360;
+  --text-primary: #2f3a3c;
+  --text-secondary: #475c60;
 
-  --accent: #aab4ff;
-  --accent-hover: #8d9cf3;
+  /* Acento sobre fondos claros (botones, fechas, bordes) */
+  --accent: #0f7c8a;
+  --accent-hover: #0b6470;
 
-  --border: #e3dfe7;
-  --border-sidebar: rgba(255, 255, 255, 0.18);
+  /* Acento sobre la sidebar oscura (iconos, hover, avatar) */
+  --accent-sidebar: #aab4ff;
+
+  --border: #d9e8ea;
+  --border-sidebar: rgba(255, 255, 255, 0.22);
 
   --font-sans: "Inter", sans-serif;
 }
@@ -128,15 +132,15 @@ body.lang-es-active .lang-en {
   border-radius: 50%;
   object-fit: cover;
   object-position: center 24%;
-  border: 3px solid var(--accent);
+  border: 3px solid var(--accent-sidebar);
   margin-bottom: 1rem;
   display: block;
   image-rendering: auto;
-  background: rgba(170, 180, 255, 0.18);
+  background: rgba(170, 180, 255, 0.2);
   transform: translateZ(0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  box-shadow: 0 8px 24px rgba(74, 53, 79, 0.12);
+  box-shadow: 0 8px 24px rgba(18, 55, 61, 0.25);
 }
 
 .profile h1 {
@@ -154,8 +158,8 @@ body.lang-es-active .lang-en {
 .badge {
   display: inline-block;
   padding: 0.4rem 0.8rem;
-  background: rgba(170, 180, 255, 0.15);
-  color: #aab4ff;
+  background: rgba(170, 180, 255, 0.18);
+  color: var(--accent-sidebar);
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 500;
@@ -200,14 +204,14 @@ body.lang-es-active .lang-en {
 
 .side-nav a:hover,
 .side-nav a.active {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.08);
   color: var(--text-sidebar-primary);
 }
 
 .side-nav a i {
   width: 20px;
   text-align: center;
-  color: var(--accent);
+  color: var(--accent-sidebar);
 }
 
 .contact-links {
@@ -230,7 +234,7 @@ body.lang-es-active .lang-en {
 }
 
 .contact-links a:hover {
-  color: var(--accent);
+  color: var(--accent-sidebar);
 }
 
 /* Main Content */
@@ -269,8 +273,8 @@ body.lang-es-active .lang-en {
   align-items: center;
   gap: 0.4rem;
   padding: 0.3rem 0.6rem;
-  background: rgba(132, 79, 186, 0.15);
-  color: #844fba;
+  background: rgba(15, 124, 138, 0.12);
+  color: #0b6470;
   border-radius: 20px;
   font-size: 0.8rem;
   font-weight: 500;
@@ -283,7 +287,7 @@ body.lang-es-active .lang-en {
 
 .cert-badge-link:hover {
   transform: scale(1.05);
-  background: rgba(132, 79, 186, 0.25);
+  background: rgba(15, 124, 138, 0.22);
 }
 
 .cert-badge-img {
@@ -361,7 +365,7 @@ body.lang-es-active .lang-en {
 
 .skill-group:hover {
   transform: translateY(-2px);
-  border-color: rgba(127, 103, 143, 0.45);
+  border-color: rgba(15, 124, 138, 0.45);
   box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
 }
 
@@ -391,7 +395,7 @@ body.lang-es-active .lang-en {
 }
 
 .tags span:hover {
-  border-color: rgba(127, 103, 143, 0.5);
+  border-color: rgba(15, 124, 138, 0.5);
   color: var(--text-primary);
 }
 
@@ -688,8 +692,8 @@ body.lang-es-active .lang-en {
 }
 
 .cookie-btn {
-  background: var(--accent);
-  color: #fff;
+  background: var(--accent-sidebar);
+  color: var(--bg-sidebar);
   border: none;
   padding: 0.6rem 1.2rem;
   border-radius: 4px;
@@ -699,7 +703,7 @@ body.lang-es-active .lang-en {
 }
 
 .cookie-btn:hover {
-  background: var(--accent-hover);
+  background: #fff;
 }
 
 @media (max-width: 768px) {
